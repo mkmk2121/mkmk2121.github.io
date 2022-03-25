@@ -1,0 +1,56 @@
+@font-face {
+ font-family: "Etna";
+ src: url("font/12.otf") format("OpenType");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+p{color: tomato;
+    font-size: 20px;
+    font-family: "Etna";
+    margin: 2%;
+}  
+h1{color: red;
+    font-size: 55px;
+    font-family: "Etna";
+}	  
+span{color: blue;
+    font-size: 22px;
+}
+a{  
+	text-decoration: none;
+	color: tomato;
+	display: inline-block;
+	font-size: 30px;
+	font-family: "Etna", normal;
+	margin-right: 10px;
+    margin-bottom: 10px;
+
+}  
+div{
+	width: 90%;
+	margin: auto;
+	padding: 70px;
+}
+img{
+	border: 2px solid #FF2442;
+    padding: 15px;
+    background: #FFB830;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin: 1%;
+    width: 30%;
+	height: auto;
+   }
+body{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/фон2.jpg);
+	color: #fff;
+	font-family: sans-serif;
+}
+span{
+	color: #FF2442;
+}
+
