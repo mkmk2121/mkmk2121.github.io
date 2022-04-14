@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@media all and (max-width 768px){
+	.item{
+		max-width: initial;
+		max-height: initial;
+		width: calc(95vw - 10px);
+		height: calc(95vw / 16 * 9);
+	}
+	.img_link{
+		margin: auto;
+	}
+}
+@media all and (min-width: 1200px){
+	.img_link: hover{
+	opacity: 1;
+	transform: scale(1.1), rotate(5deg);
+	z-index: 10;
+	box-shadow: 0 0 200px 30px rgba(0, 0, 0, 0.4);
+}
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/фон.jpg);
+	background-repeat:  no-repeat;
+	max-height: 100%;
+    background-position: center center;
+	background-attachment: fixed;
+    background-size: cover;
+}
+.main{
+	background-color: #612897;
+	display: flex;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+	flex-wrap: wrap;
+	animation-name: example;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+@keyframes example {
+			0% {background-color: #612897;}
+			25% {background-color: #D67D3E;}
+			50% {background-color: #A64B2A;}
+			75% {background-color: #313552;}
+			100% {background-color: #612897;}
+            }
+.item{
+	box-shadow:  0 0 10px 1px rgba(0, 0, 0, 0.3);
+	max-height: 265px;
+	max-width: 480px;
+	height: calc(95vw / 2 / 16 * 9);
+	width: calc(50vw - 10px);
+	background-color: blue;
+	margin: 5px;
+	background-position: center;
+	background-size: cover;
+}
+	
+.heading{
+	font-size: 80px;
+	text-align: center;
+	width: 100%;
+	padding: 30px 0;
+	font-family: "Caveat", cursive;
+	color: #000B49;
+}	
+.img_link{
+	margin: 5px;
+	display: block;
+	opacity: 0.8;
+	transition: 2s ease, transform 0.5s ease-in, box-shadow 0.4s ease-out;
+}
+.img_link:hover{
+	opacity: 1;
+	transform: scale(1.3,1.3) rotate(5deg);
+	z-index: 10;
+	box-shadow: 0 0 200px rgba(141, 27, 27, 4);
+}
+.link_wrapper:{
+	padding: 50px 0;
+	margin: 0 25px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.author{
+	color: blue;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: 0.5s;
+}
+.author:hover{
+	border-color: blue;
+	font-family: "Caveat", cursive;
+}
